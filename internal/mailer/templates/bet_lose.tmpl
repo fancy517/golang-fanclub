@@ -1,0 +1,24 @@
+{{define "subject"}}{{.home_team}} vs. {{.away_team}}: You lost the bet!{{end}}
+{{define "plainBody"}}
+Hi {{.name}},
+The match between {{.home_team}} vs. {{.away_team}} is decided and you lost!
+Amount: {{.amount}} TRX
+Good luck next time!
+{{end}}
+{{define "htmlBody"}}
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<p>Hi {{.name}},</p>
+<p>The match between {{.home_team}} vs. {{.away_team}} is decided and you lost!</p>
+<p>Amount: <strong>{{.amount}} TRX</strong></p>
+<p>Good luck next time!</p>
+<p>Thanks</p>
+<p>The fanclub Team</p>
+</body>
+</html>
+{{end}}

@@ -1,0 +1,24 @@
+{{define "subject"}}{{.name}}, your account at fanclub is activated!{{end}}
+{{define "plainBody"}}
+Hi {{.name}},
+Now you can login to your account and start betting: 
+<a href="http://localhost:3000" target="_black">http://localhost:3000</a>
+Good luck
+The fanclub Team
+{{end}}
+{{define "htmlBody"}}
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<p>Hi {{.name}},</p>
+<p>Now you can login to your account and start betting:</p>
+<p><a href="http://localhost:3000" target="_black">http://localhost:3000</a></p>
+<p>Good luck</p>
+<p>The fanclub Team</p>
+</body>
+</html>
+{{end}}

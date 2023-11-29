@@ -1,0 +1,22 @@
+{{define "subject"}}Match has cancelled!{{end}}
+{{define "plainBody"}}
+Hi,
+Match has cancelled!
+MatchID: {{.matchID}}
+{{end}}
+{{define "htmlBody"}}
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<p>Hi,</p>
+<p>Match has cancelled!</p>
+<p>MatchID: <h1>{{.matchID}}</h1></p>
+<p>Thanks</p>
+<p>The fanclub Team</p>
+</body>
+</html>
+{{end}}

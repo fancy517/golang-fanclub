@@ -1,0 +1,26 @@
+version: '3.4'
+
+services:
+  mysql:
+    container_name: fanclub-mysql
+    image: mysql:8.0
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=fanclub
+      # - MYSQL_USER=root
+      # - MYSQL_PASSWORD=root
+    volumes:
+      - mysql-data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+  # fanclubontron:
+  #   image: fanclubontron
+  #   build:
+  #     context: .
+  #     dockerfile: ./Dockerfile
+  #   ports:
+  #     - 8080:8080
+
+volumes:
+  mysql-data:

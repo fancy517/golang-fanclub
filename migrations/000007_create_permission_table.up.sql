@@ -1,0 +1,4 @@
+CREATE TABLE IF NOT EXISTS perms (
+    user_id INT NOT NULL PRIMARY KEY,
+    perm INT DEFAULT 0
+);

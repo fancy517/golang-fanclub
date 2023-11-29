@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS affiliates (
+    referee INT NOT NULL PRIMARY KEY,
+    referrer INT NOT NULL,
+    reward DOUBLE NOT NULL DEFAULT 0,
+    confirmed TINYINT NOT NULL DEFAULT 0,
+    created_at TIMESTAMP DEFAULT NOW()
+);

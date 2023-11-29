@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS crypto_prices (
+    token VARCHAR(100) NOT NULL PRIMARY KEY,
+    usd DOUBLE NOT NULL,
+    updated_at TIMESTAMP DEFAULT NOW()
+);

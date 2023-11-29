@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS transactions (
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    user_id INT NOT NULL,
+    amount DOUBLE NOT NULL,
+    dir VARCHAR(10) NOT NULL DEFAULT 'W',
+    tx_hash VARCHAR(255) NOT NULL,
+    wallet_address VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT NOW(),
+    UNIQUE (tx_hash)
+);

@@ -1,0 +1,22 @@
+{{define "subject"}}{{.home_team}} vs. {{.away_team}}: You won the bet!{{end}}
+{{define "plainBody"}}
+Hi {{.name}},
+The match between {{.home_team}} vs. {{.away_team}} is decided and you won!
+Amount: {{.amount}} TRX
+{{end}}
+{{define "htmlBody"}}
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<p>Hi {{.name}},</p>
+<p>The match between {{.home_team}} vs. {{.away_team}} is decided and you won!</p>
+<p>Amount: <strong>{{.amount}} TRX</strong></p>
+<p>Thanks</p>
+<p>The fanclub Team</p>
+</body>
+</html>
+{{end}}

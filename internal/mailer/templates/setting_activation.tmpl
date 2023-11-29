@@ -1,0 +1,28 @@
+{{define "subject"}}Welcome to fanclub!{{end}}
+{{define "plainBody"}}
+Hi {{.name}},
+We're excited to have you on board!
+
+Your activation code is : {{.code}}
+Please note that this is a one-time use code and it will expire in a day.
+Thanks,
+The fanclub Team
+{{end}}
+{{define "htmlBody"}}
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<p>Hi {{.name}},</p>
+<p>We're excited to have you on board!</p>
+Your activation code is : {{.code}}
+
+<p>Please note that this is a one-time use token and it will expire in a day.</p>
+<p>Thanks,</p>
+<p>The fanclub Team</p>
+</body>
+</html>
+{{end}}

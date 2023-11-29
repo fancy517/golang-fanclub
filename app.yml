@@ -1,0 +1,19 @@
+# Server configurations
+server:
+  # mainnet/shasta/nile
+  network: "nile"
+
+  port: 8080
+
+database:
+  host: "localhost"
+  port: 3306
+  user: "root"
+  password: "root"
+
+smtp:
+  host: ""
+  port: 587
+  user: ""
+  password: ""
+  sender: ""

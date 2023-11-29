@@ -1,0 +1,16 @@
+{{define "subject"}}{{.Title}}{{end}}
+{{define "plainBody"}}
+{{.Content}}
+{{end}}
+{{define "htmlBody"}}
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+{{.Content}}
+</body>
+</html>
+{{end}}

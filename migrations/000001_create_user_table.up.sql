@@ -1,0 +1,13 @@
+CREATE TABLE IF NOT EXISTS users (
+    id INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(255),
+    email VARCHAR(255) NOT NULL UNIQUE,
+    avatar TEXT NOT NULL,
+    password_hash VARCHAR(255) NOT NULL,
+    active INT NOT NULL DEFAULT 0,
+    activation_code VARCHAR(25) NOT NULL UNIQUE DEFAULT '',
+    referral_code VARCHAR(100) NOT NULL UNIQUE DEFAULT '',
+    created_at TIMESTAMP DEFAULT NOW(),
+    updated_at TIMESTAMP DEFAULT NOW(),
+    PRIMARY KEY (id)
+);

@@ -1,0 +1,26 @@
+{{define "subject"}}You received referral reward!{{end}}
+{{define "plainBody"}}
+Hi {{.name}},
+
+You earned {{.amount}} TRX from {{.referee_name}}'s referral.
+
+Thanks,
+The fanclub Team
+{{end}}
+{{define "htmlBody"}}
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<p>Hi {{.name}},</p>
+
+<p>You earned {{.amount}} TRX from {{.referee_name}}'s referral.</p>
+
+<p>Thanks,</p>
+<p>The fanclub Team</p>
+</body>
+</html>
+{{end}}

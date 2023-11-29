@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS teams (
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    name TEXT NOT NULL,
+    logo TEXT NOT NULL,
+    league_id INT NOT NULL,
+    deleted TINYINT NOT NULL DEFAULT 0,
+    created_at TIMESTAMP DEFAULT NOW(),
+    updated_at TIMESTAMP DEFAULT NOW(),
+    UNIQUE (name(20))
+);

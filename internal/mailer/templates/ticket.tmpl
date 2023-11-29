@@ -1,0 +1,30 @@
+{{define "subject"}}fanclub Ticket{{end}}
+{{define "plainBody"}}
+New ticket has been created.
+Sender: {{.name}}
+Email: {{.email}}
+Subject: {{.subject}}
+Message:
+{{.message}}
+The fanclub Team
+{{end}}
+{{define "htmlBody"}}
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<p>New ticket has been created.</p>
+<p></p>
+<p>Sender: {{.name}}</p>
+<p>Email: {{.email}}</p>
+<p>Subject: {{.subject}}</p>
+<p>Message:</p>
+<p>{{.message}}</p>
+
+<p>The fanclub Team</p>
+</body>
+</html>
+{{end}}

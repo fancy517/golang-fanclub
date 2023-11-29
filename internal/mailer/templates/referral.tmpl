@@ -1,0 +1,26 @@
+{{define "subject"}}You've Been Referred!{{end}}
+{{define "plainBody"}}
+Hi {{.name}},
+
+{{.referee_name}} refered you. You will receive a bonus when {{.referee_name}} places a bet of more than {{.amount}} TRX.
+
+Thanks,
+The fanclub Team
+{{end}}
+{{define "htmlBody"}}
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<p>Hi {{.name}},</p>
+
+<p>{{.referee_name}} refered you. You will receive a bonus when {{.referee_name}} places a bet of more than {{.amount}} TRX.</p>
+
+<p>Thanks,</p>
+<p>The fanclub Team</p>
+</body>
+</html>
+{{end}}
